@@ -51,9 +51,16 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   },
   {
     id: "3",
-    image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e487123e-4244-4ad8-a265-e081cf575ea8/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
     images: [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e487123e-4244-4ad8-a265-e081cf575ea8/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ac995831-e3c5-4be9-97a0-2b67bb80ccd6/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb1f1cc5-1aae-4e5c-a397-2329bd3e934c/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9f419ae7-a13f-4028-af7e-b8c45c1e47cc/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a6f43de0-91ca-4972-940a-1551da6cb848/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1f8064aa-d51a-4599-928a-bb5eee97379f/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2860c0d6-9528-4495-b662-0392291d1d21/calzado-de-f%C3%BAtbol-para-pasto-sint%C3%A9tico-turf-phantom-gx-academy-dynamic-fit-tf-6NN2SC.png",
+      
     ],
     name: "Nike Cosmic",
     price: 129,
