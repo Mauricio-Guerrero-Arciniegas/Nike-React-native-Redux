@@ -6,17 +6,28 @@ import {
   Image,
   FlatList,
   Pressable,
+  ActivityIndicator,
 } from "react-native";
-import {useSelector, useDispatch} from 'react-redux';
-import { productsSlice } from '../store/productsSlice';
-
+import { useSelector, useDispatch } from "react-redux";
+import { productsSlice } from "../store/productsSlice";
+import { useGetProductsQuery } from "../store/apiSlice";
 
 const ProductsScreen = ({ navigation }) => {
   // const navigation = useNavigation();
 
   const dispatch = useDispatch();
 
-  const products = useSelector(state => state.products.products);
+  const { data, isLoading, error } = useGetProductsQuery();
+
+  if (isLoading) {
+    return <ActivityIndicator />
+  }
+
+  if (error) {
+    return <Text>Error fetching products: {error.error}</Text>
+  }
+
+  const products = data.data;
 
   return (
     <FlatList
@@ -25,9 +36,11 @@ const ProductsScreen = ({ navigation }) => {
         <Pressable
           onPress={() => {
             // update selected product
-            dispatch(productsSlice.actions.setSelectedProduct(item.id))
+            
+            // dispatch(productsSlice.actions.setSelectedProduct(item.id));
 
-            navigation.navigate("Product Details")}}
+            navigation.navigate("Product Details", { id: item._id });
+          }}
           style={styles.itemContainer}
         >
           <Image source={{ uri: item.image }} style={styles.image} />
@@ -39,12 +52,6 @@ const ProductsScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
   itemContainer: {
     width: "50%",
     padding: 1,
